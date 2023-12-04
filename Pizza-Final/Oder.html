@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Oder</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="width=device-width,initial-scale=1.0" name="viewport">    
+</head>
+  <body>
+    <style>
+      body {
+        background: url("https://th.bing.com/th/id/R.82f5e45f5e07c56768b72da0b223370d?rik=ANPNwmbeFbwoRA&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f05%2fBlack-background-lines-scratches-1920x1080.jpg&ehk=Pn%2fDSkV1Z2eDD9VcW11aFBUd7D7NGRIDALtWS90%2fu9U%3d&risl=&pid=ImgRaw&r=0") no-repeat center center ;
+      }
+      
+      div {
+        font-family: verdana;
+        color: rgb(219, 132, 19);
+        text-align: center;
+        font-size: 15px;
+        
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-right: 200px;
+        margin-left: 200px;
+        padding: 50px;
+      }
+      table{
+      width: 600px;
+      height: 200px;
+      margin: auto;
+      border: 5px solid rgb(2, 2, 2);
+      }
+      a{
+        font-family: verdana;
+        color: rgb(233, 218, 13);
+        text-align: center;
+        font-size: 15px;
+      }
+      </style>
+  <div class="order-food center">
+      <form
+        onsubmit="return pizza1()"
+        method="POST"
+        action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php">
+        <h1>Oder Page</h1>
+        <table>
+          <tr>
+            <td>Number Contact:</td>
+            <td>
+              <input type="text" name="Number" />
+            </td>
+          </tr>
+          <tr>
+            <td>Delivery address</td>
+            <td>
+              <input type="text" name="Deliveryaddress" />
+            </td>
+          </tr>
+          <tr>
+            <td>Email Contact:</td>
+            <td>
+              <input type="email" name="EmailContact" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Pay on pickup or online</td>
+            <td><input type="radio" name="pickup" value="Pickup" />Pickup</td>
+            <td><input type="radio" name="pickup" value="Online" />Online</td>
+          </tr>
+          <tr>
+            <td>Types credit:</td>
+            <td><input type="radio" name="Card" value="Visa" />Visa</td>
+            <td>
+              <input type="radio" name="Card" value="MasterCard" />MasterCard
+            </td>
+            <td>
+              <input type="radio" name="Card" value="AmericanExpress" />American
+              Express
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Card Number</label>
+            </td>
+            <td>
+              <input type="text" name="cardNum" />
+            </td>
+          </tr>
+          <tr>
+            <td>Expired Date</td>
+            <td><input type="text" name="Date" /></td>
+          </tr>
+          <tr>
+            <td>CVC/CVV/CID</td>
+            <td><input type="text" name="CVC" /></td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>
+                <input type="submit" value="Submit" />
+                <input type="reset" value="Reset" />
+              </p>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+</body>
+<script src="./javascript/valiate.js"></script>
+  <a href="index.html" > Back to homepage </a>
+</html>

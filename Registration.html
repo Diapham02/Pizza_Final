@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+  </head>
+  <body>
+
+    <style>
+      body {
+        background: url("https://th.bing.com/th/id/R.82f5e45f5e07c56768b72da0b223370d?rik=ANPNwmbeFbwoRA&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f05%2fBlack-background-lines-scratches-1920x1080.jpg&ehk=Pn%2fDSkV1Z2eDD9VcW11aFBUd7D7NGRIDALtWS90%2fu9U%3d&risl=&pid=ImgRaw&r=0") no-repeat center center ;
+      }
+      
+      div {
+        font-family: verdana;
+        color: rgb(219, 132, 19);
+        text-align: center;
+        font-size: 15px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-right: 200px;
+        margin-left: 200px;
+        padding: 50px;
+      }
+      table{
+      width: 600px;
+      height: 200px;
+      margin: auto;
+      border: 5px solid rgb(2, 2, 2);
+      }
+      a{
+        font-family: verdana;
+        color: rgb(233, 218, 13);
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 100px;
+      }
+      </style> 
+    <div class="register-pizza center">
+      <form
+        method="POST"
+        action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php"
+        onsubmit="return pizza()"
+      >
+      <h1>Registration Page</h1>
+        <table>
+          <tr>
+            <td>Username</td>
+            <td>
+              <input type="text" name="Name" />
+            </td>
+          </tr>
+          <tr>
+            <td>Phone Number</td>
+            <td>
+              <input type="number" name="Phonenumber" />
+            </td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td><input type="password" name="Password" /></td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>
+              <input type="email" name="Email" />
+            </td>
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td>
+              <input type="radio" name="Gender" value="Male" />Male
+              <input type="radio" name="Gender" value="Female" />Female
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Kind of pizza <br />
+              do you like ?
+            </td>
+            <td>
+              <input
+                type="checkbox"
+                name="Seafood's Pizza"
+                value="SeafoodPizza"
+              />Seafood's Pizza <br />
+              <input type="checkbox" name="Meat Pizza" value="MeatPizza" />Meat
+              Pizza
+              <br />
+              <input
+                type="checkbox"
+                name="Vegetarian'sPizza"
+                value="VegetarianPizza"
+              />Vegetarian's Pizza
+              <br />
+            </td>
+          </tr>
+          <tr>
+            <label for="">Things you like in our restaurant</label>
+            <select name="Your mind">
+              <option value="Price" selected="selected">Price</option>
+              <option value="Service">Service</option>
+              <option value="Quality">Quality</option>
+              <option value="Fresh">Fresh</option>
+              <option value="View">View</option>
+            </select>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                <input type="submit" value="Submit" />
+                <input type="reset" value="Reset" />
+              </p>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <script src="./javascript/valiate.js"></script>
+  </body>
+  
+
+  <footer>
+  <a href="index.html" > Back to homepage </a>
+  </footer>
+</html>
